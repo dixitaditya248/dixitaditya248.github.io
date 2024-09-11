@@ -1,1 +1,3 @@
-:wave: Welcome to My [Website](https://dixitaditya248.github.io/)
+# dixitaditya248.github.io
+
+My new personal website.
