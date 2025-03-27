@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aditya Dixit</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Your Name, your field" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link rel="icon" href="images/logo.PNG" type="image/icon type">
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="index.html">Aditya Dixit</a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--francisco">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item menu__item--current"><a href="research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+							<li class="menu__item"><a href="pub.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
+                            <li class="menu__item"><a href="cv.html" class="menu__link"><span class="menu__helper">Work Experience</span></a></li>
+							<li class="menu__item"><a href="teach.html" class="menu__link"><span class="menu__helper">Internship</span></a></li>
+                            <li class="menu__item"><a href="misc.html" class="menu__link"><span class="menu__helper">Miscellaneous</span></a></li>
+						</ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#CONTACT"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                         </ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+</body>
+<!-- //header -->
+<!-- banner -->
+ 
+	<div class="banner1">
+		<div class="container">
+			<h2 class="animated wow slideInLeft" data-wow-delay="0s">Research overview</h2>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- //about -->
+<!-- team -->
+    <div class="team">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">Design of deep learning models</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Techniques to denoise the Hyperspectral Images.</p>
+        <div class="about-grids">
+            <div class="col-md-6 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            
+                            <div class="panel-body panel_text">
+                                <p align='justify'>	Hyperspectral Images (HSI) capture data across multiple spectral bands and are widely used in real-world applications such as remote sensing,
+									 agriculture, and marine monitoring. However, practical use is often hindered by challenges such as sensor noise, high storage requirements, and limited availability of labeled data. My research focuses
+									   on developing deep learning-based solutions to address these challenges. To enhance HSI denoising, I proposed <a href="https://ieeexplore.ieee.org/abstract/document/10302305">UNFOLD</a>, a novel method combining a 3D Transformer-based encoder,
+									    a 3D U-Net, and a 3D CNN-based decoder. This architecture captures long-range dependencies, preserves structural integrity, and enhances local details, leading to significant 
+										improvements in denoising performance. Additionally, I introduced <a href="https://openaccess.thecvf.com/content/WACV2025/html/Dixit_VISIONARY_Novel_Spatial-Spectral_Attention_Mechanism_for_Hyperspectral_Image_Denoising_WACV_2025_paper.html">VISIONARY</a>, a spatial-spectral attention mechanism that jointly analyzes spatial and spectral domains. This 
+										approach adapts to the unique characteristics of HSI, delivering more effective noise reduction. To overcome the challenge of limited training data, I developed REATTAIN, which
+										 integrates supervised contrastive learning, data augmentation, and HSI inpainting to enhance feature learning and improve model generalization. Furthermore, I am 
+										 currently exploring non-linear dimensionality reduction techniques to reduce data redundancy by leveraging the inherent sparsity in HSI, optimizing storage without compromising
+										  data integrity. Through these innovations, my work aims to advance the capabilities of hyperspectral imaging, making it more practical and effective for real-world applications. </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+                <img src="images/Archi.jpg" alt=" " class="img-responsive" />
+            </div>
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0.2s">
+                <img src="images/figure_1_page-0001.jpg" alt=" " class="img-responsive" />
+            </div>
+            <!-- <div class="clearfix"> </div> -->
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<!-- //about -->
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">Academic Research</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Spatio-Spectral Analysis of Hyperspectral Images </p>
+        <div class="about-grids">
+            <div class="col-md-6 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body panel_text">
+                                 <ul align='justify'>
+
+									<h2>Hyperspectral Image (HSI) Compression using Deep Learning Techniques</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
+									<p><strong>Duration:</strong> Jul. 2024 - Ongoing</p>
+									<ul>
+										<li>Currently exploring non-linear dimensionality reduction techniques (e.g., LLE, ISOMAP) to mitigate data redundancy in HSI by leveraging data sparsity.</li>
+										<li>Actively working on preserving spectral and spatial relationships in compressed HSI through advanced dimensionality reduction methods.</li>
+									</ul>
+									
+									<h2>Spatial-Spectral Attention based Hyperspectral Image Denoising</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
+									<p><strong>Duration:</strong> Dec. 2023 - Jun. 2024</p>
+									<ul>
+										<li>Developed a novel plug-and-play Transformer block for HSI denoising, blending a sequence of Global Feature Aggregations (GFAs) to enhance feature representation through a data-driven approach.</li>
+										<li>Designed the SSCformer model to sequentially combine attention from spatial, spectral, and spatial-spectral domains, incorporating weightage parameters for enhanced flexibility in HSI denoising.</li>
+									</ul>
+
+									<h2>Supervised Contrastive Learning based Hyperspectral Image Denoising</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
+									<p><strong>Duration:</strong> Jun. 2023 - Nov. 2023</p>
+									<ul>
+										<li>Mitigated the problem of data scarcity by utilizing Contrastive Learning techniques.</li>
+										<li>Explored the feasibility of Inpainting because it enhances dataset diversity and feature learning for better denoising results.</li>
+									</ul>
+
+									<h2>Hyperspectral Image (HSI) Denoising using Deep Learning</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
+									<p><strong>Duration:</strong> Nov. 2022 - May. 2023</p>
+									<ul>
+										<li>Proposed a novel HSI denoising method combining 3-D U-Net, 3-D CNN, and 3-D Transformer to leverage the strengths of each technique.</li>
+										<li>Utilized a 3-D Transformer-based encoder for capturing long-range dependencies, a 3-D U-Net for preserving structural integrity, and a 3-D CNN-based decoder for local detail preservation.</li>
+									</ul>
+
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/figure_2_page-0001.jpg" alt=" " class="img-responsive" />
+            </div>
+            <!-- <div class="clearfix"> </div> -->
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/figure_3_page-0001.jpg" alt=" " class="img-responsive" />
+            </div>
+            <!-- <div class="clearfix"> </div> -->
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/figure_4.jpg" alt=" " class="img-responsive" />
+            </div>
+            <!-- <div class="clearfix"> </div> -->
+
+            <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/Denoise.jpg" alt=" " class="img-responsive" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container">
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">Academic Projects</h3>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Other areas of interest in computer vision and machine learning. </p>
+        <div class="about-grids">
+            <div class="col-md-6 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body panel_text">
+                                 <ul align='justify'>
+
+									<h2>Real-time Face Mask Detection using Computer Vision</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~surya/">Prof. Surya Prakash</a></h4>
+									<p><strong>Duration:</strong> Aug. 2022 - Nov. 2022</p>
+									<ul>
+										<li>Implemented a CNN model for mask detection.</li>
+										<li>Developed a user interface (UI) to interact with the mask detection model.</li>
+									</ul>
+
+									<h2>Image-to-Image Transformation using VAE and GAN</h2>
+									<h4>Supervisor: <a href="http://www.cse.iitm.ac.in/~sdas/">Prof. Sukhendu Das</a></h4>
+									<p><strong>Duration:</strong> Sep. 2021 - Nov. 2021</p>
+									<ul>
+										<li>Trained an image-to-image translation model to convert high-quality images into low-quality images while preserving the same spatial dimensions, and vice versa.</li>
+									</ul>
+                                    
+									<h2>Invisibility Cloak Using opencv-based technique</h2>
+    								<h4>Supervisor: <a href="http://gecj.ac.in/departments/cse/cs_faculty.htm"> Yogesh Sharma </a></h4>
+    								<p><strong>Duration:</strong> Mar. 2019 - May 2020</p>
+    								<ul>
+										<li>Captured and stored background frames, and detected red-colored cloth using color detection and segmentation algorithms.</li>
+										<li>Segmented out the red-colored cloth by generating a mask to create the invisibility effect.</li>
+										<li><a href="https://youtu.be/WWeGt0SGgsw">Demo Video</a> </li>
+									</ul>
+
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/facemask.jpeg" alt=" " class="img-responsive" />
+            </div>
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/GAN-vs-VAE.jpg" alt=" " class="img-responsive" />
+            </div>
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/invisibleee.png" alt=" " class="img-responsive" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- <p align="center"> My research is currently supported by <a href="https://www.isro.gov.in/"> ISRO</a> </p>   -->
+<!-- //about -->
+<!-- footer -->
+	<div class="footer"><a name="CONTACT"></a>
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+                    <h3>Contact</h3>
+                    <p>Email: phd2201101009 &alpha; iiti.ac.in</p>
+                    <!-- <p>Phone: +91 XXXXXXXXXX</p> -->
+                    <p>Address: 418-C, HJB Hostel, IIT Indore</p>
+					<div class="social">
+						<ul class="social-nav model-8">
+							<li><a href="https://www.linkedin.com/in/aditya-dixit-iiti/" class="linkedin"><i></i></a></li>
+							<li><a href="https://twitter.com/dixitaditya248" class="twitter"><i></i></a></li>
+							<li><a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en" class="g"><i></i></a></li>
+                            <li><a href="https://github.com/dixitaditya248" class="p"><i></i></a></li>
+							<li><a href="https://orcid.org/0009-0007-4860-7396" class="orcid"><i></i></a></li>
+						</ul>
+					</div>
+				</div>
+                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                    <br><br><br>
+                    <p>Simrol, Indore</p>
+                    <p>Madhya Pradesh, 453552</p>
+                    <p> <a href="http://www.iiti.ac.in">www.iiti.ac.in</a></p>
+                </div>
+                <div class="clearfix"> </div>
+			</div>
+			<div class="footer-grids1">
+				<div class="footer-grids1-left animated wow slideInLeft">
+                    <ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="research.html">Research</a></li>
+						<li><a href="pub.html">Publications</a></li>
+                        <li><a href="cv.html">Work Experience</a></li>
+						<li><a href="teach.html">Internship</a></li>
+                        <li><a href="misc.html">Miscellaneous</a></li>
+						<li><a href="#CONTACT">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-grids1-right">
+					<p class="animated wow slideInRight" data-wow-delay="0s">Copyright <a>Aditya Dixit</a></p>
+				</div>
+				<script type="text/javascript" src="//counter.websiteout.net/js/21/8/0/1"></script>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
