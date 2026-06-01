@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Aditya Dixit</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,6 +72,11 @@
 						</ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#CONTACT"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+							<li>
+                                <button id="theme-toggle" class="btn btn-default navbar-btn">
+                                    🌙 Dark Mode
+                                </button>
+                            </li>
                          </ul>
 					</nav>
 				</div>
@@ -78,23 +84,76 @@
 			</nav>
 		</div>
 	</div>
-</body>
+<!-- </body> -->
 <!-- //header -->
 <!-- banner -->  
- 
-	<div class="banner1"><a name="jrnl"></a>
-		<div class="container">
-			<h2 class="animated wow slideInLeft" data-wow-delay="0s">Published Research</h2>
-		</div>
-	</div>
+
+	<!-- Banner -->
+<div class="banner1">
+    <a name="jrnl"></a>
+    <div class="container">
+        <h2 class="animated wow slideInLeft" data-wow-delay="0s">
+            Published Research
+        </h2>
+    </div>
+</div>
+
+<!-- Publication Statistics -->
+<div class="container">
+    <div class="row text-center" style="margin:40px 0 60px 0;">
+
+        <div class="col-md-4 col-sm-4">
+            <div class="stats-box">
+                <div class="stats-number counter" data-target="5">0</div>
+                <div class="stats-label">Publications</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+            <div class="stats-box">
+                <div class="stats-number counter" data-target="3">0</div>
+                <div class="stats-label">Journal Papers</div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+            <div class="stats-box">
+                <div class="stats-number counter" data-target="2">0</div>
+                <div class="stats-label">Conference Papers</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 <!-- //banner --> 
 <!-- about -->
 	   <div class="team">
     <div class="container">
-       <u> <a alignhref="#jrnl">Journal</a></u><br>
-        <u> <a href="#conf">Conferences</a> </u><br><br>
-        <p> More details to be found at <a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en">Google Scholar</a></p><br>
-        <h3 class="animated wow zoomIn" data-wow-delay="0s">Peer-reviewed journal</h3>
+		<div style="text-align:center;margin-bottom:40px;">
+
+			<a href="#jrnl" class="btn btn-primary">
+				Journal Publications
+			</a>
+			
+			<a href="#conf" class="btn btn-default">
+				Conference Publications
+			</a>
+			
+			</div>
+        <!-- <p> More details to be found at <a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en">Google Scholar</a></p><br> -->
+		<div style="text-align:center; margin:30px 0 40px 0;">
+
+			<a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en"
+			   target="_blank"
+			   class="btn btn-primary scholar-btn">
+			   📚 View Google Scholar Profile
+			</a>
+		
+		</div>
+
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">Peer-Reviewed Journal Articles</h3>
         <div class="about-grids">
             <div class="col-mlg-6 about-grids-left">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -102,19 +161,41 @@
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             
                             <div class="panel-body panel_text">
-<ol>
-	<ol style="font-family: Arial, sans-serif; line-height: 1.8; color: #333; text-align: justify;">
-<li> <strong>Aditya Dixit</strong>, Anup Kumar Gupta, Puneet Gupta, Saurabh Srivastava, Ankur Garg, "<a href="https://ieeexplore.ieee.org/abstract/document/10302305">UNFOLD: 3-D U-Net, 3-D CNN, and 3-D Transformer-Based Hyperspectral Image Denoising</a>" in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-10, 2023, Art no. 5529710, doi: 10.1109/TGRS.2023.3328922.</li>
-<li> <strong>Aditya Dixit</strong>, Anup Kumar Gupta, Puneet Gupta, Ankur Garg, "<a href="https://www.sciencedirect.com/science/article/pii/S0924271626000225?via%3Dihub">RECREATE: Supervised contrastive learning and inpainting based hyperspectral image denoising</a>" in ISPRS Journal of Photogrammetry and Remote Sensing, vol. 233, pp. 14-24, 2026, doi: 10.1016/j.isprsjprs.2026.01.022.</li>
-</ol>
-
-
-							  </div>
-                            </div>
+								<!-- <ul style="list-style-type:square; line-height:1.8; text-align:justify; padding-left:25px;"> -->
+									<ul class="pub-list" style="list-style-type:square; text-align:justify; padding-left:25px;">
+									<li>
+										<span style="color:#b22222;font-weight:700;">
+											Aditya Dixit,
+										</span> Puneet Gupta,
+										"<a href="https://ieeexplore.ieee.org/abstract/document/11408292">
+										FUMESNet: Exploring Frequency-based Transformer and Improving Skip Connection for Hyperspectral Methane Plume Segmentation</a>"
+										in IEEE Transactions on Instrumentation and Measurement, vol. 75, pp. 1-11, 2026, Art no. 5004711, doi: 10.1109/TIM.2026.3667330.
+									</li>
+								
+									<li>
+										<span style="color:#b22222;font-weight:700;">
+											Aditya Dixit,
+										</span> Anup Kumar Gupta, Puneet Gupta, Ankur Garg,
+										"<a href="https://www.sciencedirect.com/science/article/pii/S0924271626000225?via%3Dihub">
+										RECREATE: Supervised Contrastive Learning and Inpainting Based Hyperspectral Image Denoising</a>"
+										in ISPRS Journal of Photogrammetry and Remote Sensing, vol. 233, pp. 14-24, 2026, doi: 10.1016/j.isprsjprs.2026.01.022.
+									</li>
+								
+									<li>
+										<span style="color:#b22222;font-weight:700;">
+											Aditya Dixit,
+										</span> Anup Kumar Gupta, Puneet Gupta, Saurabh Srivastava, Ankur Garg,
+										"<a href="https://ieeexplore.ieee.org/abstract/document/10302305">
+										UNFOLD: 3-D U-Net, 3-D CNN, and 3-D Transformer-Based Hyperspectral Image Denoising</a>"
+										in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-10, 2023, Art no. 5529710, doi: 10.1109/TGRS.2023.3328922.
+									</li>
+								</ul>
+							</div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -122,28 +203,36 @@
 <!-- team -->
  	   <div class="team"><a name="conf"></a>
     <div class="container">
-        <h3 class="animated wow zoomIn" data-wow-delay="0s">Conference proceedings</h3>
+        <h3 class="animated wow zoomIn" data-wow-delay="0s">Conference Proceedings</h3>
         <div class="about-grids">
             <div class="col-mlg-6 about-grids-left">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-primary">
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            
-                            <div class="panel-body panel_text">
- <ol>
-	<ol style="font-family: Arial, sans-serif; line-height: 1.8; color: #333; text-align: justify;">
-<li> <strong>Aditya Dixit</strong>, Nischit Hosamani, Puneet Gupta, Ankur Garg, "<a href="https://openaccess.thecvf.com/content/WACV2025/html/Dixit_VISIONARY_Novel_Spatial-Spectral_Attention_Mechanism_for_Hyperspectral_Image_Denoising_WACV_2025_paper.html">VISIONARY: Novel Spatial-Spectral
-	Attention Mechanism for Hyperspectral Image Denoising</a>" in IEEE/CVF Winter Conference on Applications
-	of Computer Vision (WACV), 2025, pp. 2736-2745, <strong>(Core A).</strong> </li>
 
-	<li> Hani Shanableh, Mohamed Barakat A. Gibril, Ahmed Mansour, <strong>Aditya Dixit</strong>, Rami Al-Ruzouq, Nezar Hammouri,
-		Fouad Lamghari, Safa M. Ahmed, Ratiranjan Jena, Tilal Mohamed, Mohammed Abdulraheem Almarzouqi, Nedal
-		Salem Alafayfeh, Simon Zerisenay Ghebremeskel, “<a href="https://isprs-annals.copernicus.org/articles/X-G-2025/805/2025/isprs-annals-X-G-2025-805-2025.html">A Comparative Analysis of 
-			Deep Learning Methods for Ghaf Tree Detection and Segmentation from UAV-based Images</a>" in ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information
-			 Sciences, X-G-2025, pp. 805-811, 2025. </li>
-</ol>
-
-							  </div>
+							<div class="panel-body panel_text">
+								<!-- <ul style="list-style-type:square; line-height:1.8; text-align:justify; padding-left:25px;"> -->
+									<ul class="pub-list" style="list-style-type:square; text-align:justify; padding-left:25px;">
+									<li>
+										<span style="color:#b22222;font-weight:700;">
+											Aditya Dixit,
+										</span> Nischit Hosamani, Puneet Gupta, Ankur Garg, "<a href="https://openaccess.thecvf.com/content/WACV2025/html/Dixit_VISIONARY_Novel_Spatial-Spectral_Attention_Mechanism_for_Hyperspectral_Image_Denoising_WACV_2025_paper.html">VISIONARY: Novel Spatial-Spectral
+										Attention Mechanism for Hyperspectral Image Denoising</a>" in IEEE/CVF Winter Conference on Applications
+										of Computer Vision (WACV), 2025, pp. 2736-2745, doi: 10.1109/WACV61041.2025.00271. 
+									</li>
+						
+									<li> 
+										Hani Shanableh, Mohamed Barakat A. Gibril, Ahmed Mansour, <span style="color:#b22222;font-weight:700;">
+											Aditya Dixit,
+										</span> Rami Al-Ruzouq, Nezar Hammouri,
+										Fouad Lamghari, Safa M. Ahmed, Ratiranjan Jena, Tilal Mohamed, Mohammed Abdulraheem Almarzouqi, Nedal
+										Salem Alafayfeh, Simon Zerisenay Ghebremeskel, “<a href="https://isprs-annals.copernicus.org/articles/X-G-2025/805/2025/isprs-annals-X-G-2025-805-2025.html">A Comparative Analysis of 
+											Deep Learning Methods for Ghaf Tree Detection and Segmentation from UAV-based Images</a>" in ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information
+											 Sciences, X-G-2025, pp. 805-811, 2025, doi: 10.5194/isprs-annals-X-G-2025-805-2025. 
+									</li>
+							
+								</ul>
+							</div>
                             </div>
                         </div>
                     </div>
@@ -161,9 +250,9 @@
 			<div class="footer-grids">
 				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
                     <h3>Contact</h3>
-                    <p>Email: phd2201101009 &alpha; iiti.ac.in</p>
+					<p>Email: <a href="mailto:dixitaditya248@gmail.com">dixitaditya248 [at] gmail.com</a></p>
                     <!-- <p>Phone: +91 XXXXXXXXXX</p> -->
-                    <p>Address: 418-C, HJB Hostel, IIT Indore</p>
+                    <!-- <p>Address: ABCD</p> -->
 					<div class="social">
 						<ul class="social-nav model-8">
 							<li><a href="https://www.linkedin.com/in/aditya-dixit-iiti/" class="linkedin"><i></i></a></li>
@@ -174,12 +263,12 @@
 						</ul>
 					</div>
 				</div>
-                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+                <!-- <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
                     <br><br><br>
                     <p>Simrol, Indore</p>
                     <p>Madhya Pradesh, 453552</p>
                     <p> <a href="http://www.iiti.ac.in">www.iiti.ac.in</a></p>
-                </div>
+                </div> -->
                 <div class="clearfix"> </div>
 			</div>
 			<div class="footer-grids1">
@@ -223,5 +312,60 @@
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+	
+		const counters = document.querySelectorAll('.counter');
+	
+		counters.forEach(counter => {
+	
+			const target = +counter.getAttribute('data-target');
+			const duration = 1500; // animation time in ms
+			const stepTime = 30;
+			const increment = target / (duration / stepTime);
+	
+			let count = 0;
+	
+			const updateCounter = () => {
+				count += increment;
+	
+				if (count < target) {
+					counter.innerText = Math.ceil(count);
+					setTimeout(updateCounter, stepTime);
+				} else {
+					counter.innerText = target;
+				}
+			};
+	
+			updateCounter();
+		});
+	});
+	</script>
+
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    
+    // Check saved preference
+    if(localStorage.getItem('theme') === 'dark'){
+        document.body.classList.add('dark-mode');
+        toggleBtn.innerHTML = '☀️ Light Mode';
+    }
+    
+    // Toggle theme
+    toggleBtn.addEventListener('click', function(){
+    
+        document.body.classList.toggle('dark-mode');
+    
+        if(document.body.classList.contains('dark-mode')){
+            localStorage.setItem('theme','dark');
+            toggleBtn.innerHTML = '☀️ Light Mode';
+        }else{
+            localStorage.setItem('theme','light');
+            toggleBtn.innerHTML = '🌙 Dark Mode';
+        }
+    });
+    </script>
 </body>
 </html>
