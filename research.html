@@ -71,6 +71,11 @@
 						</ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#CONTACT"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+							<li>
+                                <button id="theme-toggle" class="btn btn-default navbar-btn">
+                                    🌙 Dark Mode
+                                </button>
+                            </li>
                          </ul>
 					</nav>
 				</div>
@@ -90,10 +95,10 @@
 <!-- //banner -->
 <!-- //about -->
 <!-- team -->
-    <div class="team">
+<div class="team">
     <div class="container">
         <h3 class="animated wow zoomIn" data-wow-delay="0s">Design of deep learning models</h3>
-        <p class="qui animated wow zoomIn" data-wow-delay="0s">Techniques to denoise the Hyperspectral Images.</p>
+        <p class="qui animated wow zoomIn" data-wow-delay="0s">Deep Learning Innovations in Hyperspectral Imaging and Remote Sensing.</p>
         <div class="about-grids">
             <div class="col-md-6 about-grids-left">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -101,27 +106,68 @@
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             
                             <div class="panel-body panel_text">
-                                <p align='justify'>	Hyperspectral Images (HSI) capture data across multiple spectral bands and are widely used in real-world applications such as remote sensing,
-									 agriculture, and marine monitoring. However, practical use is often hindered by challenges such as sensor noise, high storage requirements, and limited availability of labeled data. My research focuses
-									   on developing deep learning-based solutions to address these challenges. To enhance HSI denoising, I proposed <a href="https://ieeexplore.ieee.org/abstract/document/10302305">UNFOLD</a>, a novel method combining a 3D Transformer-based encoder,
-									    a 3D U-Net, and a 3D CNN-based decoder. This architecture captures long-range dependencies, preserves structural integrity, and enhances local details, leading to significant 
-										improvements in denoising performance. Additionally, I introduced <a href="https://openaccess.thecvf.com/content/WACV2025/html/Dixit_VISIONARY_Novel_Spatial-Spectral_Attention_Mechanism_for_Hyperspectral_Image_Denoising_WACV_2025_paper.html">VISIONARY</a>, a spatial-spectral attention mechanism that jointly analyzes spatial and spectral domains. This 
-										approach adapts to the unique characteristics of HSI, delivering more effective noise reduction. To overcome the challenge of limited training data, I developed REATTAIN, which
-										 integrates supervised contrastive learning, data augmentation, and HSI inpainting to enhance feature learning and improve model generalization. Furthermore, I am 
-										 currently exploring non-linear dimensionality reduction techniques to reduce data redundancy by leveraging the inherent sparsity in HSI, optimizing storage without compromising
-										  data integrity. Through these innovations, my work aims to advance the capabilities of hyperspectral imaging, making it more practical and effective for real-world applications. </p>
+                                <p align='justify'>	My research lies at the intersection of Computer Vision, Deep Learning, Remote Sensing, and Hyperspectral Imaging, with a focus on developing intelligent algorithms for analyzing complex Earth observation and imaging data. I work on advancing deep learning methodologies for hyperspectral image processing, environmental monitoring, and remote sensing applications. 
+									A significant part of my research focuses on hyperspectral image denoising, where I developed <a href="https://ieeexplore.ieee.org/abstract/document/10302305">UNFOLD</a>, a hybrid architecture that combines 3D U-Net, 3D CNN, and Transformer networks to effectively model both local spatial features and long-range spectral dependencies. Building upon this work, I introduced
+									 <a href="https://openaccess.thecvf.com/content/WACV2025/html/Dixit_VISIONARY_Novel_Spatial-Spectral_Attention_Mechanism_for_Hyperspectral_Image_Denoising_WACV_2025_paper.html">VISIONARY</a>, a novel spatial-spectral attention mechanism that jointly analyzes spatial and spectral information to improve feature representation and denoising performance. To address the challenge of
+									 limited labeled data, I proposed <a href="https://www.sciencedirect.com/science/article/pii/S0924271626000225?via%3Dihub">RECREATE</a>, a framework that integrates supervised contrastive learning and image inpainting to enhance feature discrimination and model generalization.
+
+									 Beyond denoising, I actively investigate hyperspectral methane plume segmentation for environmental monitoring. My recent work, <a href="https://ieeexplore.ieee.org/abstract/document/11408292">FUMESNet</a>, explores frequency-based Transformer architectures that leverage magnitude and phase information to jointly model spatial and spectral-frequency characteristics, enabling 
+									 more accurate methane plume detection from satellite imagery. I further enhanced feature propagation through improved skip connections and efficient channel attention mechanisms.
+
+									 My research interests also extend to semantic segmentation, foundation models, and remote sensing applications, including adaptive pseudo-labeling for semi-supervised learning, satellite image analysis, and UAV-based environmental monitoring. Currently, I am exploring hyperspectral imaging for mining-related contamination assessment, developing deep learning models to analyze chemical compounds and quantify contamination effects using spectral signatures.
+									 
+									 Through these contributions, I aim to bridge the gap between advanced machine learning techniques and real-world remote sensing challenges, enabling more reliable, scalable, and impactful solutions for environmental monitoring and Earth observation. </p>
                                 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
-                <img src="images/Archi.jpg" alt=" " class="img-responsive" />
-            </div>
-			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0.2s">
-                <img src="images/figure_1_page-0001.jpg" alt=" " class="img-responsive" />
-            </div>
+            <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+
+				<div id="researchCarousel" class="carousel slide" data-ride="carousel">
+			
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#researchCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#researchCarousel" data-slide-to="1"></li>
+						<li data-target="#researchCarousel" data-slide-to="2"></li>
+						<li data-target="#researchCarousel" data-slide-to="3"></li>
+					</ol>
+			
+					<!-- Slides -->
+					<div class="carousel-inner">
+			
+						<div class="item active">
+							<img src="images/Archi.jpg" alt="UNFOLD" class="img-responsive">
+						</div>
+			
+						<div class="item">
+							<img src="images/figure_1_page-0001.jpg" alt="VISIONARY" class="img-responsive">
+						</div>
+			
+						<div class="item">
+							<img src="images/recreate.jpg" alt="RECREATE" class="img-responsive">
+						</div>
+			
+						<div class="item">
+							<img src="images/fumesnet.jpg" alt="FUMESNet" class="img-responsive">
+						</div>
+			
+					</div>
+			
+					<!-- Controls -->
+					<a class="left carousel-control" href="#researchCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+			
+					<a class="right carousel-control" href="#researchCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+			
+				</div>
+			
+			</div>
             <!-- <div class="clearfix"> </div> -->
             <div class="clearfix"> </div>
         </div>
@@ -142,15 +188,33 @@
                             <div class="panel-body panel_text">
                                  <ul align='justify'>
 
-									<h2>Hyperspectral Image (HSI) Compression using Deep Learning Techniques</h2>
-									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
-									<p><strong>Duration:</strong> Jul. 2024 - Ongoing</p>
+									<h2>Investigating contamination effects of mining-related chemical compounds using Hyperspectral Imaging (HSI) and Deep Learning</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a> and <a href="https://people.iitism.ac.in/~ssrivastava/"> Dr. Saurabh Srivastava</a></h4>
+									<p><strong>Duration:</strong> Aug. 2025 - Present</p>
 									<ul>
-										<li>Currently exploring non-linear dimensionality reduction techniques (e.g., LLE, ISOMAP) to mitigate data redundancy in HSI by leveraging data sparsity.</li>
-										<li>Actively working on preserving spectral and spatial relationships in compressed HSI through advanced dimensionality reduction methods.</li>
+										<li>Collected and curated a hyperspectral dataset of mining-related chemical compounds across varying molarity levels for contamination analysis.</li>
+										<li>Developing deep learning models to analyze and quantify contamination effects of chemical compounds.</li>
+									</ul>
+
+									<h2>Exploring Frequency-based Transformers and Enhanced Skip Connections for Hyperspectral Methane Plume Segmentation</h2>
+									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
+									<p><strong>Duration:</strong> Jan. 2025 - Jul. 2025</p>
+									<ul>
+										<li>Proposed a frequency-based Transformer architecture that replaces conventional self-attention, enabling joint modeling of spatial structures and spatial-frequency cues derived from magnitude and phase information.</li>
+										<li>Integrated an Efficient Global Channel Attention module into skip connections to emphasize spectrally informative
+											and spatially relevant features while suppressing redundant and noise-dominated channels.</li>
+									</ul>
+
+									<h2>Enhancing Semi-Supervised Remote Sensing Segmentation through Adaptive Pseudo-Labeling and Foundation Models</h2>
+									<h4>Supervisor: <a href="https://www.sharjah.ac.ae/Academics/Faculty-And-Staff/Abdallah-Shanbleh">Prof. Abdallah Shanbleh</a> and <a href="https://www.sharjah.ac.ae/Academics/Faculty-And-Staff/Rami-Al-Ruzouq">Prof. Rami-Al-Ruzouq</a></h4>
+									<p><strong>Duration:</strong> Oct. 2024 - Dec. 2024</p>
+									<ul>
+										<li>Proposed an adaptive class-wise confidence thresholding strategy to improve pseudo-label reliability in semi-supervised remote sensing segmentation.</li>
+										<li>Fine-tuned the SAM-2 foundation model with domain-specific adaptations to enhance segmentation accuracy on satellite imagery.</li>
 									</ul>
 									
-									<h2>Spatial-Spectral Attention based Hyperspectral Image Denoising</h2>
+									
+									<h2>Spatial-Spectral Attention based Transformer for Hyperspectral Image Denoising</h2>
 									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
 									<p><strong>Duration:</strong> Dec. 2023 - Jun. 2024</p>
 									<ul>
@@ -158,20 +222,20 @@
 										<li>Designed the SSCformer model to sequentially combine attention from spatial, spectral, and spatial-spectral domains, incorporating weightage parameters for enhanced flexibility in HSI denoising.</li>
 									</ul>
 
-									<h2>Supervised Contrastive Learning based Hyperspectral Image Denoising</h2>
+									<h2>Supervised Contrastive Learning and Inpainting based Hyperspectral Image Denoising</h2>
 									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
 									<p><strong>Duration:</strong> Jun. 2023 - Nov. 2023</p>
 									<ul>
-										<li>Mitigated the problem of data scarcity by utilizing Contrastive Learning techniques.</li>
-										<li>Explored the feasibility of Inpainting because it enhances dataset diversity and feature learning for better denoising results.</li>
+										<li>Introduced a supervised contrastive learning framework to enhance feature discrimination in HSI denoising.</li>
+										<li>Incorporated image inpainting as an auxiliary contrastive task to improve denoising performance.</li>
 									</ul>
 
-									<h2>Hyperspectral Image (HSI) Denoising using Deep Learning</h2>
+									<h2>Hybrid 3D CNN-Transformer Architecture for Hyperspectral Image (HSI) Denoising</h2>
 									<h4>Supervisor: <a href="https://www.iiti.ac.in/people/~puneet/">Dr. Puneet Gupta</a></h4>
 									<p><strong>Duration:</strong> Nov. 2022 - May. 2023</p>
 									<ul>
-										<li>Proposed a novel HSI denoising method combining 3-D U-Net, 3-D CNN, and 3-D Transformer to leverage the strengths of each technique.</li>
-										<li>Utilized a 3-D Transformer-based encoder for capturing long-range dependencies, a 3-D U-Net for preserving structural integrity, and a 3-D CNN-based decoder for local detail preservation.</li>
+										<li>Proposed a hybrid HSI denoising architecture combining 3D U-Net, 3D CNN, and 3D Transformer modules.</li>
+										<li>Leveraged long-range dependency modeling and structural preservation for improved denoising accuracy.</li>
 									</ul>
 
                                 </ul> 
@@ -182,22 +246,41 @@
             </div>
 
 			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+				<img src="images/IMG_20250911_170352428_HDR.jpg" alt="Liquid" class="img-responsive">
+			</div>
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+				<img src="images/SFT.jpg" alt="FUMESNet" class="img-responsive">
+			</div>
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+				<img src="images/ASFI.jpg" alt="FUMESNet" class="img-responsive">
+			</div>
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+				<img src="images/UAE.png" alt="UAV" class="img-responsive">
+			</div>
+
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
                 <img src="images/figure_2_page-0001.jpg" alt=" " class="img-responsive" />
             </div>
             <!-- <div class="clearfix"> </div> -->
 
-			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-                <img src="images/figure_3_page-0001.jpg" alt=" " class="img-responsive" />
-            </div>
+			<!-- <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/figure_3_page-0001.jpg" alt=" VISIONARY" class="img-responsive" />
+            </div> -->
             <!-- <div class="clearfix"> </div> -->
 
-			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-                <img src="images/figure_4.jpg" alt=" " class="img-responsive" />
-            </div>
+			<!-- <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+                <img src="images/figure_4.jpg" alt=" VISIONARY" class="img-responsive" />
+            </div> -->
             <!-- <div class="clearfix"> </div> -->
+			<div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+				<img src="images/recreate.jpg" alt="RECREATE" class="img-responsive">
+			</div>
 
             <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-                <img src="images/Denoise.jpg" alt=" " class="img-responsive" />
+                <img src="images/Denoise.jpg" alt="UNFOLD " class="img-responsive" />
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -264,52 +347,52 @@
     <!-- <p align="center"> My research is currently supported by <a href="https://www.isro.gov.in/"> ISRO</a> </p>   -->
 <!-- //about -->
 <!-- footer -->
-	<div class="footer"><a name="CONTACT"></a>
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
-                    <h3>Contact</h3>
-                    <p>Email: phd2201101009 &alpha; iiti.ac.in</p>
-                    <!-- <p>Phone: +91 XXXXXXXXXX</p> -->
-                    <p>Address: 418-C, HJB Hostel, IIT Indore</p>
-					<div class="social">
-						<ul class="social-nav model-8">
-							<li><a href="https://www.linkedin.com/in/aditya-dixit-iiti/" class="linkedin"><i></i></a></li>
-							<li><a href="https://twitter.com/dixitaditya248" class="twitter"><i></i></a></li>
-							<li><a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en" class="g"><i></i></a></li>
-                            <li><a href="https://github.com/dixitaditya248" class="p"><i></i></a></li>
-							<li><a href="https://orcid.org/0009-0007-4860-7396" class="orcid"><i></i></a></li>
-						</ul>
-					</div>
-				</div>
-                <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
-                    <br><br><br>
-                    <p>Simrol, Indore</p>
-                    <p>Madhya Pradesh, 453552</p>
-                    <p> <a href="http://www.iiti.ac.in">www.iiti.ac.in</a></p>
-                </div>
-                <div class="clearfix"> </div>
-			</div>
-			<div class="footer-grids1">
-				<div class="footer-grids1-left animated wow slideInLeft">
-                    <ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="research.html">Research</a></li>
-						<li><a href="pub.html">Publications</a></li>
-                        <li><a href="cv.html">Work Experience</a></li>
-						<li><a href="teach.html">Internship</a></li>
-                        <li><a href="misc.html">Miscellaneous</a></li>
-						<li><a href="#CONTACT">Contact</a></li>
+<div class="footer"><a name="CONTACT"></a>
+	<div class="container">
+		<div class="footer-grids">
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+				<h3>Contact</h3>
+				<p>Email: <a href="mailto:dixitaditya248@gmail.com">dixitaditya248 [at] gmail.com</a></p>
+				<!-- <p>Phone: +91 XXXXXXXXXX</p> -->
+				<!-- <p>Address: ABCD</p> -->
+				<div class="social">
+					<ul class="social-nav model-8">
+						<li><a href="https://www.linkedin.com/in/aditya-dixit-iiti/" class="linkedin"><i></i></a></li>
+						<li><a href="https://twitter.com/dixitaditya248" class="twitter"><i></i></a></li>
+						<li><a href="https://scholar.google.com/citations?user=KcBQ6b8AAAAJ&hl=en" class="g"><i></i></a></li>
+						<li><a href="https://github.com/dixitaditya248" class="p"><i></i></a></li>
+						<li><a href="https://orcid.org/0009-0007-4860-7396" class="orcid"><i></i></a></li>
 					</ul>
 				</div>
-				<div class="footer-grids1-right">
-					<p class="animated wow slideInRight" data-wow-delay="0s">Copyright <a>Aditya Dixit</a></p>
-				</div>
-				<script type="text/javascript" src="//counter.websiteout.net/js/21/8/0/1"></script>
-				<div class="clearfix"> </div>
 			</div>
+			<!-- <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+				<br><br><br>
+				<p>Simrol, Indore</p>
+				<p>Madhya Pradesh, 453552</p>
+				<p> <a href="http://www.iiti.ac.in">www.iiti.ac.in</a></p>
+			</div> -->
+			<div class="clearfix"> </div>
+		</div>
+		<div class="footer-grids1">
+			<div class="footer-grids1-left animated wow slideInLeft">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li class="active"><a href="pub.html">Publications</a></li>
+					<li><a href="cv.html">Work Experience</a></li>
+					<li><a href="teach.html">Internship</a></li>
+					<li><a href="misc.html">Miscellaneous</a></li>
+					<li><a href="#CONTACT">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-grids1-right">
+				<p class="animated wow slideInRight" data-wow-delay="0s">Copyright: <a>Aditya Dixit</a></p>
+			</div>
+			<script type="text/javascript" src="//counter.websiteout.net/js/21/8/0/1"></script>
+			<div class="clearfix"> </div>
 		</div>
 	</div>
+</div>
 <!-- //footer -->
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
@@ -331,5 +414,37 @@
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    
+    // Check saved preference
+    if(localStorage.getItem('theme') === 'dark'){
+        document.body.classList.add('dark-mode');
+        toggleBtn.innerHTML = '☀️ Light Mode';
+    }
+    
+    // Toggle theme
+    toggleBtn.addEventListener('click', function(){
+    
+        document.body.classList.toggle('dark-mode');
+    
+        if(document.body.classList.contains('dark-mode')){
+            localStorage.setItem('theme','dark');
+            toggleBtn.innerHTML = '☀️ Light Mode';
+        }else{
+            localStorage.setItem('theme','light');
+            toggleBtn.innerHTML = '🌙 Dark Mode';
+        }
+    });
+    </script>
+
+<script>
+	$(document).ready(function(){
+		$('#researchCarousel').carousel({
+			interval: 3000
+		});
+	});
+	</script>
 </body>
 </html>
